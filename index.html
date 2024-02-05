@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Will you be my valentine?</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Satisfy">
+ 
+</head>
+
+<body>
+
+  
+
+  <div id='right'>
+    <div class="message message-1" id="message-1">
+      <h1>Hi, There!</h1>
+      <img src="vala.gif" height="200" width="300"></img>
+      <h2>Will you be my valentine?</h2>
+    </div>
+    
+ 
+ 
+    <!-- Button to play sound and open a new HTML page -->
+    <button id="yes" onclick="playSoundAndOpenPage()">Yes ❤️</button>
+
+    <script>
+        function playSoundAndOpenPage() {
+            // Create an audio element
+            var audio = new Audio("yay-6120.mp3");
+
+            // Wait for the audio to load
+            audio.oncanplay = function() {
+                // Play the sound
+                audio.play();
+
+                // Delay opening the new HTML page
+                setTimeout(function() {
+                    // Open a new HTML page in the current tab
+                    window.location.href = 'kiss.html';
+                }, 1000); // Adjust the delay time as needed
+            };
+        }
+    </script>
+
+
+
+
+    
+    <button id='runaway-btn'>No 💔</button>
+    <div class="w"></div> 
+    <link>
+  </div>
+  
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js'></script>
+  <script src="index.js"></script>
+  
+</body>
+
+</html>
